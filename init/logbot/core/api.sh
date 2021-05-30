@@ -1,3 +1,13 @@
+#!/bin/bash
+#
+# Copyright (C) 2020-2021 by UsergeTeam@Github, < https://github.com/UsergeTeam >.
+#
+# This file is part of < https://github.com/UsergeTeam/Userge > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/UsergeTeam/Userge/blob/master/LICENSE >
+#
+# All rights reserved.
+
 declare -r _api_url="https://api.telegram.org/bot"
 declare -i _mid=0 _isChecked=0
 declare -a _allMessages=()
@@ -34,6 +44,6 @@ _getResponse() {
 \terror_code : [$errcode]
 \tdescription : $desc"
         fi
-        sleep 0.7
+        sleep 0.6
     fi
 }
