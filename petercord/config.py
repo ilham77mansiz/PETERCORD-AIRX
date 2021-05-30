@@ -89,7 +89,7 @@ class Config:
 def get_version() -> str:
     """get petercord version"""
     ver = f"{versions.__major__}.{versions.__minor__}.{versions.__micro__}"
-    if "/ilham77mansiz/petercord-plugins" in Config.UPSTREAM_REPO.lower():
+    if "/ilham77mansiz/PETERCORD-AIRX" in Config.UPSTREAM_REPO.lower():
         diff = list(_REPO.iter_commits(f"v{ver}..HEAD"))
         if diff:
             ver = f"{ver}-patch.{len(diff)}"
