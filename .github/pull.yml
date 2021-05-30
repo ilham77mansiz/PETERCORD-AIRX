@@ -1,0 +1,6 @@
+version: "1"
+rules:
+  - base: Petercord-Userbot
+    upstream: ilham77mansiz:Petercord-Userbot
+    mergeMethod: rebase
+    mergeUnstable: false
