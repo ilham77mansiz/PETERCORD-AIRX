@@ -6,22 +6,22 @@ trap handleSigTerm TERM
 trap handleSigInt INT
 trap 'echo hi' USR1
 
-initPetercord-Plugins() {
+initPETERCORD-AIRX() {
     printLogo
     assertPrerequisites
-    sendMessage "Initializing Petercord-Plugins ..."
+    sendMessage "Initializing PETERCORD-AIRX ..."
     assertEnvironment
-    editLastMessage "Starting Petercord-Plugins ..."
+    editLastMessage "Starting PETERCORD-AIRX ..."
     printLine
 }
 
-startPetercord-Plugins() {
+startPETERCORD-AIRX() {
     startLogBotPolling
     runPythonModule petercord "$@"
 }
 
-stopPetercord-Plugins() {
-    sendMessage "Exiting Petercord-Plugins ..."
+stopPETERCORD-AIRX() {
+    sendMessage "Exiting PETERCORD-AIRX ..."
     endLogBotPolling
 }
 
@@ -37,10 +37,10 @@ handleSigInt() {
     exit 130
 }
 
-runPetercord-Plugins() {
-    initPetercord-Plugins
-    startPetercord-Plugins "$@"
+runPETERCORD-AIRX() {
+    initPETERCORD-AIRX
+    startPETERCORD-AIRX "$@"
     local code=$?
-    stopPetercord-Plugins
+    stopPETERCORD-AIRX
     return $code
 }
